@@ -15,7 +15,8 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.2",
-    "hardhat": "^2.8.0"
+    "hardhat": "^2.8.0",
+    "hardhat-watcher": "^2.1.1"
   },
   "dependencies": {
     "dotenv": "^10.0.0"

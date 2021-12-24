@@ -1,6 +1,7 @@
 require('dotenv').config();
 require('@nomiclabs/hardhat-ethers');
 require('@nomiclabs/hardhat-waffle');
+require('hardhat-watcher');
 
 task(
   'accounts',
@@ -26,6 +27,13 @@ module.exports = {
     ropsten: {
       url: process.env.INFURA_NODE,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
+    },
+  },
+  watcher: {
+    compile: {
+      tasks: ['compile'],
+      files: ['./contracts'],
+      verbose: true,
     },
   },
 };
